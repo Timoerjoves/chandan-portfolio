@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduBuddy | Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --neon-pink: #FF007F;
+      --neon-blue: #00E0FF;
+      --neon-purple: #9F00FF;
+      --dark-bg: #0F0F1A;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --glass: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #1A002D, #0F0F1A);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+      position: relative;
+    }
+
+    .doodle {
+      position: absolute;
+      width: 80px;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .top-left { top: 20px; left: 20px; }
+    .top-right { top: 40px; right: 30px; }
+    .bottom-left { bottom: 30px; left: 40px; }
+    .bottom-right { bottom: 20px; right: 20px; }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--neon-blue);
+      border-radius: 20px;
+      max-width: 900px;
+      padding: 3rem;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 25px rgba(159, 0, 255, 0.3);
+      z-index: 1;
+    }
+
+    h1 {
+      background: linear-gradient(to right, var(--neon-blue), var(--neon-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      background: var(--neon-pink);
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px var(--neon-pink);
+      transition: all 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: var(--neon-blue);
+      box-shadow: 0 0 15px var(--neon-blue);
+    }
+
+    .back-link {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .back-link a {
+      color: var(--neon-purple);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .back-link a:hover {
+      color: var(--neon-pink);
+    }
+      .doodle {
+      position: absolute;
+      width: 80px;
+      opacity: 0.2;
+      z-index: 0;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" class="doodle top-left" alt="AI Icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/2840/2840630.png" class="doodle top-right" alt="Robot Icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="doodle bottom-left" alt="Book Icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/4391/4391970.png" class="doodle bottom-right" alt="Lightbulb Icon">
+
+  <div class="card">
+    <h1>⚡ EduBuddy</h1>
+    <p>
+      Built for hustle. Coded with care. EduBuddy’s your digital study pal in a noisy world.📱💡
+    </p>
+    <p>
+      Tasks. Flashcards. Doubts. Dopamine. All sorted. ✨📚
+    </p>
+    <div class="cta">
+      <a href="https://buddybotai.netlify.app/?fbclid=PAQ0xDSwK-UMJleHRuA2FlbQIxMQABp1bKwKY3-mS4JfsDO9Ze3gVD_XRn5A7IJy86iP8nbarTbNp5H665lqh5GRP__aem_GW39E74WGPmdjO-3q9wfpg" target="_blank">Check Out EduBuddy →</a>
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="index.html">← Back to Home</a>
+  </div>
+</body>
+</html>
