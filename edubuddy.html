@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduBuddy | Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e2a78;
+      --accent: #e84a5f;
+      --bg-gradient: linear-gradient(to bottom right, #eef1f8, #dde3ed);
+      --text-dark: #222;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-dark);
+      padding: 3rem 1.5rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff;
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About EduBuddy</h1>
+    <p>
+      EduBuddy is a smart academic assistant built to help students from 8th to 10th grade stay focused,
+      manage their studies, and receive AI-driven learning support. From personalized task planners
+      to doubt-solving, flashcards, reports, and YouTube learning integrations — EduBuddy makes
+      learning feel guided, adaptive, and effortless.
+    </p>
+    <p>
+      Designed for students across India with a simple vision: to bridge the gap between scattered study habits
+      and structured, productive learning without overwhelming the learner.
+    </p>
+    <a class="btn" href="https://buddybotai.netlify.app/" target="_blank">Visit EduBuddy Website</a>
+  </div>
+</body>
+</html>

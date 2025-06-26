@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandan Vajragiri | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e2a78;
+      --accent: #e84a5f;
+      --bg-gradient: linear-gradient(to bottom right, #eef1f8, #dde3ed);
+      --text-dark: #222;
+      --glass: rgba(255, 255, 255, 0.6);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-dark);
+    }
+
+    header {
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: var(--accent);
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--primary);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .project-card p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card a {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .project-card a:hover {
+      background-color: var(--accent);
+    }
+
+    .socials a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chandan Vajragiri</h1>
+    <p>CSE 28' Student @ RVCE | Founder of EduBuddy.</p>
+    <div class="btn-group">
+      <a href="#projects" class="btn">Projects</a>
+      <a href="#connect" class="btn">Connect</a>
+      <a href="#about" class="btn">About Me</a>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" class="doodle top-left" style="position:absolute; top:20px; left:20px; width:80px; opacity:0.08; animation: float 6s ease-in-out infinite;">
+    <img src="https://cdn-icons-png.flaticon.com/512/4149/4149677.png" class="doodle top-right" style="position:absolute; top:20px; right:20px; width:80px; opacity:0.08; animation: float 6s ease-in-out infinite;">
+    <img src="https://cdn-icons-png.flaticon.com/512/4359/4359958.png" class="doodle bottom-left" style="position:absolute; bottom:20px; left:20px; width:80px; opacity:0.08; animation: float 6s ease-in-out infinite;">
+    <img src="https://cdn-icons-png.flaticon.com/512/3476/3476360.png" class="doodle bottom-right" style="position:absolute; bottom:20px; right:20px; width:80px; opacity:0.08; animation: float 6s ease-in-out infinite;">
+  </header>
+
+  <style>
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .connect-btns a {
+      display: inline-block;
+      margin: 0.5rem 1rem 1rem 0;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .connect-btns a:hover {
+      background-color: var(--accent);
+    }
+  </style>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>EduBuddy</h3>
+      <p>AI-powered learning assistant transforming how students from 8th–10th study and stay organized.</p>
+      <a href="edubuddy.html">Click here</a>
+    </div>
+    <div class="project-card">
+      <h3>AI Rice Mill</h3>
+      <p>End-to-end AI-driven automation system for rice mills with smart grading, reporting and dashboards.</p>
+      <a href="ai-rice-mill.html">Click here</a>
+    </div>
+    <div class="project-card">
+      <h3>Brainwave LED</h3>
+      <p>Brain-computer interface that lights up LEDs based on EEG signals—merging neuroscience with code.</p>
+      <a href="#">UP NEXT</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a 19-year-old Computer Science student at RVCE, Bangalore. Passionate about AI, product building,
+      and creative tech solutions that blend impact with simplicity. I believe in building tools that make sense,
+      scale smartly, and solve what school didn’t teach us to.
+    </p>
+  </section>
+
+  <section id="connect">
+    <h2>Connect</h2>
+    <div class="connect-btns">
+      <a href="https://www.instagram.com/chandan.vajragiri?igsh=MWgyd2ZrOWptYmh4Zg==" target="_blank">Instagram Profile</a>
+      <a href="https://www.linkedin.com/in/chandan-vajragiri-301422321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn Profile</a>
+      <a href="https://x.com/chandanvajragi1?s=21" target="_blank">X (Twitter) Profile</a>
+    </div>
+  </section>
+
+  <footer>
+    ⓒ 2025 Chandan Vajragiri. Built from the chaos of Bengaluru traffic.
+  </footer>
+</body>
+</html>
+
