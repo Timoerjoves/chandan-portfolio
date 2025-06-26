@@ -2,27 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+<<<<<<< HEAD
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+=======
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+>>>>>>> cbda10e98ad65f6e5a23d80122cfe3f1f6f0a513
   <title>Chandan Vajragiri | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
+<<<<<<< HEAD
       --primary: #1e2a78;
       --accent: #e84a5f;
       --bg-gradient: linear-gradient(to bottom right, #eef1f8, #dde3ed);
       --text-dark: #222;
       --glass: rgba(255, 255, 255, 0.6);
+=======
+      --neon-pink: #FF007F;
+      --neon-blue: #00E0FF;
+      --neon-purple: #9F00FF;
+      --dark-bg: #0F0F1A;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --glass: rgba(255, 255, 255, 0.1);
+      --border-glow: 0 0 15px rgba(0, 224, 255, 0.4);
+>>>>>>> cbda10e98ad65f6e5a23d80122cfe3f1f6f0a513
     }
 
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+<<<<<<< HEAD
       scroll-behavior: smooth;
+=======
+>>>>>>> cbda10e98ad65f6e5a23d80122cfe3f1f6f0a513
     }
 
     body {
       font-family: 'Outfit', sans-serif;
+<<<<<<< HEAD
       background: var(--bg-gradient);
       color: var(--text-dark);
     }
@@ -31,10 +49,21 @@
       padding: 4rem 2rem 3rem;
       text-align: center;
       position: relative;
+=======
+      background: linear-gradient(135deg, #1A002D, #0F0F1A);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+>>>>>>> cbda10e98ad65f6e5a23d80122cfe3f1f6f0a513
     }
 
     header h1 {
       font-size: 3rem;
+<<<<<<< HEAD
       color: var(--primary);
       margin-bottom: 1rem;
     }
@@ -126,10 +155,107 @@
       padding: 2rem;
       font-size: 0.9rem;
       color: #888;
+=======
+      background: linear-gradient(to right, var(--neon-pink), var(--neon-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px rgba(255, 0, 128, 0.6);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--neon-purple);
+      border-radius: 15px;
+      padding: 2rem;
+      width: 90%;
+      max-width: 800px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(159, 0, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: var(--neon-purple);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: var(--glass);
+      margin: 0.5rem 0;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #eee;
+    }
+
+    a {
+      color: var(--neon-purple);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--neon-pink);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .card {
+        padding: 2rem 1.2rem;
+      }
+    }
+
+    .fadeIn {
+      animation: fadeIn 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+>>>>>>> cbda10e98ad65f6e5a23d80122cfe3f1f6f0a513
     }
   </style>
 </head>
 <body>
+<<<<<<< HEAD
   <header>
     <h1>Chandan Vajragiri</h1>
     <p>CSE 28' Student @ RVCE | Founder of EduBuddy.</p>
@@ -209,3 +335,51 @@
 </body>
 </html>
 
+=======
+  <header class="fadeIn">
+    <h1>Chandan Vajragiri</h1>
+    <p>Building dreams & breaking loops @ RVCE 🌆 Bengaluru heat, startup streets, and a little AI spice 💻🌶️</p>
+  </header>
+
+  <section class="section fadeIn">
+    <div class="card">
+      <h2>🎓 Ed Phase</h2>
+      <ul>
+        <li>RVCE, Bangalore – where the coffee’s strong & the code stronger ☕💻</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Cooking Now</h2>
+      <ul>
+        <li><a href="edubuddy.html">⚡ EduBuddy – AI bestie for students on the grind 📚🤖</a></li>
+        <li><a href="ai-rice-mill.html">🌾 AI Monitoring System – Making rice mills smarter ⚙️📈</a></li>
+        <li>🧠 EEG Brainwave LED – Mind power, quite literally 🧠💡</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💼 Vault Logs</h2>
+      <ul>
+        <li>🎯 n8n Automation – Investor slide-ins without lifting a finger 🔁📬</li>
+        <li>🎓 St. Paul School Portal – Because Excel sheets are so 2000s 🏫📊</li>
+        <li>📦 Inventory System – Flask meets grains, magic happens 📦🐍</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📲 Let’s Connect</h2>
+      <ul>
+        <li>Email: <a href="mailto:thescienceworker@gmail.com">thescienceworker@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/chandanvajragiri">/in/chandanvajragiri</a></li>
+        <li>Instagram: <a href="https://instagram.com/chandanvajragiri">@chandanvajragiri</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="footer">
+    ⓒ 2025 Chandan Vajragiri. All rights reserved.
+  </div>
+</body>
+</html>
+>>>>>>> cbda10e98ad65f6e5a23d80122cfe3f1f6f0a513

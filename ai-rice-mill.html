@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
+<<<<<<< HEAD
       --primary: #1e2a78;
       --accent: #4caf50;
       --bg-gradient: linear-gradient(to bottom right, #f0f4f7, #e4ebf1);
@@ -63,10 +64,112 @@
 
     .btn:hover {
       background-color: var(--primary);
+=======
+      --neon-green: #00FFB3;
+      --neon-yellow: #FFD700;
+      --dark-bg: #0A0F1A;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --glass: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #101010, #1A002D);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+      position: relative;
+    }
+
+    .doodle {
+      position: absolute;
+      width: 80px;
+      opacity: 0.2;
+      z-index: 0;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .top-left { top: 20px; left: 20px; }
+    .top-right { top: 40px; right: 30px; }
+    .bottom-left { bottom: 30px; left: 40px; }
+    .bottom-right { bottom: 20px; right: 20px; }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--neon-green);
+      border-radius: 20px;
+      max-width: 900px;
+      padding: 3rem;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 25px rgba(0, 255, 179, 0.3);
+      z-index: 1;
+    }
+
+    h1 {
+      background: linear-gradient(to right, var(--neon-green), var(--neon-yellow));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      background: var(--neon-green);
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px var(--neon-green);
+      transition: all 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: var(--neon-yellow);
+      box-shadow: 0 0 15px var(--neon-yellow);
+    }
+
+    .back-link {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .back-link a {
+      color: var(--neon-green);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .back-link a:hover {
+      color: var(--neon-yellow);
+>>>>>>> cbda10e98ad65f6e5a23d80122cfe3f1f6f0a513
     }
   </style>
 </head>
 <body>
+<<<<<<< HEAD
   <div class="container">
     <h1>About AI Rice Mill</h1>
     <p>
@@ -79,6 +182,28 @@
       through clean design and practical logic.
     </p>
     <a class="btn" href="https://mallikarjunmillai.netlify.app" target="_blank">Visit AI Rice Mill Website</a>
+=======
+  <img src="https://cdn-icons-png.flaticon.com/512/3523/3523883.png" class="doodle top-left" alt="Automation Icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/2454/2454268.png" class="doodle top-right" alt="Data Icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" class="doodle bottom-left" alt="Sensor Icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/3727/3727695.png" class="doodle bottom-right" alt="Industry Icon">
+
+  <div class="card">
+    <h1>🌾 AI-Powered Rice Mill</h1>
+    <p>
+      Where traditional meets tech — we built an intelligent backend system to streamline rice milling using AI. Real-time decisions, clean dashboards, and zero chaos. 🧠⚙️
+    </p>
+    <p>
+      From truck entries to lab report insights and AI-based recommendations — we automated what mattered and left humans to scale. 💼📊
+    </p>
+    <div class="cta">
+      <a href="https://mallikarjunmillai.netlify.app" target="_blank">Visit Live Project →</a>
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="index.html">← Back to Home</a>
+>>>>>>> cbda10e98ad65f6e5a23d80122cfe3f1f6f0a513
   </div>
 </body>
 </html>
